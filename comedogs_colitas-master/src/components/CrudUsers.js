@@ -13,7 +13,7 @@ const CRUDUSERS = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('https://comedogs-backend.onrender.com/users');
+        const response = await axios.get('https://back-colita-express.onrender.com/users');
         setUsers(response.data);
       } catch (error) {
         console.error('Error al obtener la lista de usuarios:', error);

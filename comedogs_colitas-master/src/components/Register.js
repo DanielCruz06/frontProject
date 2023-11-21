@@ -62,7 +62,7 @@ const Register = () => {
 
     // Resto de la lógica para enviar el formulario
     try {
-      const response = await fetch('https://comedogs-backend.onrender.com/auth/register', {
+      const response = await fetch('https://back-colita-express.onrender.com/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

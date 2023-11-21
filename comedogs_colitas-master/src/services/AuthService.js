@@ -2,7 +2,7 @@
 class AuthService {
   login(email, password) {
     // Lógica de autenticación aquí
-    return fetch('https://comedogs-backend.onrender.com/auth/login', {
+    return fetch('https://back-colita-express.onrender.com/auth/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -22,7 +22,7 @@ class AuthService {
 
     register(firstName, lastName, email, password) {
     // Lógica de registro aquí
-    return fetch('http://localhost:4000/auth/register', {
+    return fetch('https://back-colita-express.onrender.com/auth/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

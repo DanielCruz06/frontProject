@@ -36,7 +36,7 @@ const CRUDUSERS = () => {
     console.log('Editando usuario:', editingUser);
 
     // Resto del código para editar un usuario existente
-    axios.put(`https://comedogs-backend.onrender.com/users/${userCedula}`, editingUser)
+    axios.put(`https://back-colita-express.onrender.com/users/${userCedula}`, editingUser)
       .then(response => {
         console.log('Usuario editado exitosamente:', response.data);
         
@@ -59,7 +59,7 @@ const CRUDUSERS = () => {
   const handleDeleteUser = (userCedula) => {
     //e.preventDefault();
     // Eliminar un usuario
-    axios.delete(`https://comedogs-backend.onrender.com/users/${userCedula}`)
+    axios.delete(`https://back-colita-express.onrender.com/users/${userCedula}`)
       .then(response => {
         console.log('Usuario eliminado exitosamente:', response.data);
         
